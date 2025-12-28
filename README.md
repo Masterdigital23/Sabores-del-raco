@@ -7,5 +7,5 @@
 
 **🍽️ Platos del día • Colaciones personalizadas • Delivery**
 
-**Escanea QR en mesas:**
-![QR Mesas](img/qr-menu-mesa.png)
+**QR para mesas:**
+![QR Mesas](img/qr sabores del raco.png)
