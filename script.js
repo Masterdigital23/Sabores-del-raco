@@ -292,7 +292,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // ✅ FORMATO MEJORADO
             const platoNombre = plato.charAt(0).toUpperCase() + plato.slice(1).replace(/-/g, ' ');
-            const ensaladaNombre = ensaladas[0]?.charAt(0).toUpperCase() + ensaladas[0]?.slice(1) || '';
+            const ensaladaNombre = ensaladas.map(e => e.charAt(0).toUpperCase() + e.slice(1).replace(/-/g, ' ')).join(', ') || 'Sin ensalada';
+    
             const detalle = `${platoNombre} + ${agregados.map(a => a.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase())).join(', ')} + ${ensaladaNombre}`;
             
             const textarea = document.getElementById('detalle-colacion');
