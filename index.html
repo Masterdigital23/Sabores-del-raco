@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="es" class="newyear">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabores del Raco XL - Comida Rápida</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- NAVBAR / ENCABEZADO -->
+    <header class="header">
+        <div class="container">
+            <div class="brand">
+                <h1>Sabores del Raco XL</h1>
+                <p>Churrascos • Vienesas XL • Papas supremas • Chorrillanas</p>
+            </div>
+            <nav class="nav">
+                <a href="#inicio" data-section="inicio" class="nav-link active">Inicio</a>
+                <a href="#menu" data-section="menu" class="nav-link">Menú</a>
+                <!-- Menú en mesa eliminado -->
+                <a href="#delivery" data-section="delivery" class="nav-link">Delivery</a>
+                <a href="#eventos" data-section="eventos" class="nav-link">Eventos</a>
+                <a href="#contacto" data-section="contacto" class="nav-link">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- INICIO -->
+        <section id="inicio" class="section active">
+            <div class="container">
+                <!-- Banner Año Nuevo -->
+                <div class="ny-banner">
+                    <span class="ny-pill">Especial Año Nuevo</span>
+                    <p>Brinda con Sabores del Raco XL: colaciones, combos y carrito para tus celebraciones 🎆</p>
+                </div>
+
+                <div class="hero">
+                    <div class="hero-text">
+                        <h2>Sabores del Raco XL</h2>
+                        <p class="hero-sub">
+                            Churrascos XL, papas supremas, chorrillanas y hamburguesas artesanales
+                            en Puente Alto.
+                        </p>
+                        <p class="hero-quality">
+                            Todos nuestros productos son de la mejor calidad y trabajamos solo con
+                            carne 100% posta rosada.
+                        </p>
+                        <div class="hero-actions">
+                            <button class="btn" data-go="menu">Ver carta completa</button>
+                            <button class="btn btn-secondary" data-go="delivery">Pedir delivery</button>
+                        </div>
+                        <p class="hero-hours">
+                            📍 27 de Septiembre 04390, Puente Alto · 🕐 Lun a dom 12:00 pm a 01:00 am
+                        </p>
+                    </div>
+                    <div class="hero-image">
+                        <img src="img/hero-raco-xl.png"
+                             alt="Sabores del Raco XL">
+                    </div>
+                    <!-- Insignias 2025 / 2026 -->
+                    <div class="ny-badges">
+                        <div class="ny-badge">2025 🎉</div>
+                        <div class="ny-badge">2026 ✨</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MENÚ (CATÁLOGO CON TARJETAS) -->
+        <section id="menu" class="section">
+            <div class="container">
+                <h2>Carta del Raco</h2>
+                <div class="menu-grid">
+                    <!-- Churrascos XL / Ass XL -->
+                    <article class="menu-card">
+                        <img src="img/churrazco XL y hamburguesas artesanales.jpg"
+                             alt="Churrascos XL y Hamburguesas artesanales. " class="menu-img">
+                        <h3>Churrascos XL / Ass XL</h3>
+                        <p class="menu-desc">
+                            Elige tu promoción como quieras entre italiano, chacarero, barros luco,
+                            americano, a lo pobre, callampon, brasileño, chemilco, napolitano, campestre y
+                            campallazo.
+                        <h3>Hamburguesas artesanales</h3>
+                        <p class="menu-desc"></p>
+                            100% posta rosada 200 gr. Raco, rancia y clásica, con queso, cebolla
+                            caramelizada y mayonesa casera.
+                        </p>
+                        <p class="menu-price">$4500 · 2 x $8800</p>
+                    </article>
+
+                    <!-- Vienesas XL -->
+                    <article class="menu-card">
+                        <img src="img/Vienesas Xl.png"
+                             alt="Vienesas XL" class="menu-img">
+                        <h3>Vienesas XL</h3>
+                        <p class="menu-desc">
+                            · Hotdog XL $1500<br> · Italianos XL $2500 y 2 x $4800<br> · Completos XL $2500 y 2 x $4800<br> ·
+                            Dinámicos XL $2500 y 2 x $4800.<br> Combínalos como quieras.
+                        </p>
+                        <p class="menu-price">Desde $1500</p>
+                    </article>
+                    
+                    <!-- Promociones -->
+                    <article class="menu-card">
+                        <img src="img/promociones-raco.jpg"
+                            alt="Promociones" class="mnu-img">
+                        <h3>Promociones</h3>
+                        <p class="menu-desc">
+                           · churrasco a tu elección + papas fritas individuales por solo $6000<br>
+                           · 2 hamburguesas artesanales a tu eleccion + papas +una bebida de 1.25 por solo $15000.<br>
+                           · 3 fajitas xl con base diferente pero con los mismos ingredientes por solo $10000.<br>
+                           · 3 vienesas normales pueden ser italianos, completos o dinámicos también podemos combinar
+                           como tú quieras + papas individuales por solo $6000.<br>
+                           · A una fajita, hamburguesa, ass o a una vienesa XL por solo 1000 mas
+                            le puedes agregar una papita individual para acompañar.<br>
+                        <p class="menu-price">Desde 6000</p>
+                        </article>
+
+                    <!-- Papas fritas -->
+                    <article class="menu-card">
+                        <img src="img/Papas fritas.png"
+                             alt="Papas Fritas" class="menu-img">
+                        <h3>Papas fritas</h3>
+                        <p class="menu-desc"> · Chica $3000<br> · Mediana $5000<br> · Familiar $8000</p>
+                        <p class="menu-price">Desde $3000</p>
+                    </article>
+
+                    <!-- Papas supremas -->
+                    <article class="menu-card">
+                        <img src="img/Papas Supremas.jpg"
+                             alt="Papas Supremas" class="menu-img">
+                        <h3>Papas supremas</h3>
+                        <p class="menu-desc">· Individual $6000<br> · Para 2: $9500<br> · Familiar: $15000</p>
+                        <p class="menu-price">Desde $6000</p>
+                    </article>
+
+                    <!-- Chorrillanas -->
+                    <article class="menu-card">
+                        <img src="img/Chorrillanas.jpg"
+                             alt="Chorrillanas" class="menu-img">
+                        <h3>Chorrillanas</h3>
+                        <p class="menu-desc">· Individual $6000<br> · Para 2: $9500<br> · Familiar: $15000</p>
+                        <p class="menu-price">Desde $6000</p>
+                    </article>
+
+                    <!-- Salchipapas -->
+                    <article class="menu-card">
+                        <img src="img/Salchipapas.png"
+                             alt="Salchipapas" class="menu-img">
+                        <h3>Salchipapas</h3>
+                        <p class="menu-desc">· Chica $3900<br> · Mediana $6900<br> · Familiar $9000</p>
+                        <p class="menu-price">Desde $3900</p>
+                    </article>
+
+                    <!-- adicionales -->
+                    <article class="menu-card">
+                        <img src="img/Adicionales.jpg"
+                             alt="Adicionales" class="menu-img">
+                        <h3>Adicionales</h3>
+                        <p class="menu-desc">· 6 aros de cebolla x $1500<br> · 10 nuggets x $3000.</p>
+                        <p class="menu-price">Desde $1500</p>
+                      </article>
+                    
+                    <!-- Bebestibles -->
+                    <article class="menu-card">
+                        <img src="img/bebestibles.jpg"
+                             alt="Bebestibles" class="menu-img">
+                        <h3>Bebestibles</h3>
+                        <p class="menu-desc">· latas x $1500<br> · bebidas de 1,25 x $2000<br> · jugos naturales 500cc x $2000</p>
+                        <p class="menu-price">Desde $1500</p>
+                      </article>
+                    
+                    <!-- ingredientes churrascos -->
+                    <article class="menu-card">
+                        <img src="img/ingredientes.jpg"
+                             alt="Ingredientes churrascos" class="menu-img">
+                        <h3>Ingredientes churrascos</h3>
+                        <p class="menu-desc">· churrascos italianos: carne, palta, tomate y mayo<br> 
+                                            · churrasco chacarero: carne, tomate, porotos verdes, aji a elección, y mayo<br>
+                                            · churrasco barros lucos: Carne doble y queso derretido<br>
+                                            · churrasco americano: Carne, queso cheddar, aros de cebolla, tocino bbq y mayo<br>
+                                            · churrasco a lo pobre: Carne, papas fritas, cebolla caramelizada, queso gauda , huevo y mayo<br>
+                                            · churrasco campestre: Carne, lechuga, tomate, queso cheddar y mayo<br>
+                                            · churrasco callampazo: Carne, palta, queso gauda, champiñones y mayo<br>
+                                            · churrasco callampon: Carne, queso gauda, champiñones y mayo<br>
+                                            · churrasco brasileño: Carne, palta, queso gauda y mayo<br>
+                                            · churrasco chemilico: Carne, cebolla caramelizada y huevo<br>
+                                            · churrasco napolitano: Carne, queso gauda, tomate, aceituna y oregano</p>
+                      </article>
+                    <!-- Colación del día -->
+                    <article class="menu-card">
+                        <img src="img/colaciones del dia.png"
+                             alt="Colación" class="menu-img">
+                        <h3>Colación del día</h3>
+                        <p class="menu-desc">· Plato + 2 agregados + ensalada</p>
+                        <p class="menu-price">Desde $6000</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- DELIVERY -->
+        <section id="delivery" class="section">
+          <div class="container">
+            <h2>Delivery</h2>
+
+            <p style="text-align:center; margin-bottom: 20px;">
+              Completa tus datos, elige tus productos y enviaremos tu pedido por WhatsApp 📲
+            </p>
+
+            <!-- Datos del cliente -->
+            <div class="form">
+              <div class="form-group">
+                <label for="nombre">Nombre completo</label>
+                <input id="nombre" type="text" placeholder="Tu nombre">
+              </div>
+
+              <div class="form-group">
+                <label for="telefono">Teléfono</label>
+                <input id="telefono" type="tel" placeholder="+56 9 ....">
+              </div>
+
+              <div class="form-group">
+                <label for="direccion">Dirección</label>
+                <input id="direccion" type="text" placeholder="Calle, número, comuna">
+              </div>
+
+              <div class="form-group">
+                <label for="notas">Notas para el reparto (opcional)</label>
+                <textarea id="notas" rows="3" placeholder="Salsas extra, sin cebolla, portón negro, depto 302, etc."></textarea>
+              </div>
+            </div>
+
+            <!-- Selección de productos -->
+            <div class="delivery-grid delivery">
+              <div>
+                <h3>🍔 Platos</h3>
+                <p style="font-size:0.9rem; color:#e5e7eb; margin-bottom:6px;">
+                  Marca todo lo que quieras pedir.
+                </p>
+                <div id="platos-delivery"></div>
+              </div>
+
+              <div>
+                <h3>🥤 Bebidas</h3>
+                <p style="font-size:0.9rem; color:#e5e7eb; margin-bottom:6px;">
+                  Puedes combinar bebidas como prefieras.
+                </p>
+                <div id="bebidas-delivery"></div>
+              </div>
+            </div>
+<!-- TOTAL DERECHA SIN MARGEN VACÍO -->
+<div style="display: grid; grid-template-columns: 1fr 320px; gap: 20px; margin: 25px 0; align-items: start;">
+    <!-- IZQUIERDA: Colación -->
+    <div>
+        <!-- Tu configurador colación aquí (NO cambies) -->
+    </div>
+    
+    <!-- DERECHA: Total PEGADO -->
+    <div style="padding: 20px; background: linear-gradient(135deg, rgba(250,204,21,0.15), rgba(15,23,42,0.9)); border: 3px solid #facc15; border-radius: 20px; text-align: center; height: fit-content; margin: 0;">
+        <div style="font-size: 0.95rem; color: #e5e7eb; margin-bottom: 8px; font-weight: 500;">Total estimado</div>
+        <div id="total-display" style="font-size: 1.8rem; font-weight: 900; color: #facc15; text-shadow: 0 0 12px rgba(250,204,21,0.6);">$0</div>
+    </div>
+</div>
+<!-- BOTÓN WHATSAPP (AL FINAL) -->
+<div style="margin-top: 30px;">
+    <button id="btn-whatsapp" class="btn btn-secondary" style="width: 100%; font-size: 1.2rem; padding: 18px 20px;">
+        📲 Enviar pedido por WhatsApp
+    </button>
+</div>
+
+
+
+
+
+            <!-- CONFIGURADOR COLACIÓN REAL -->
+<div style="background: rgba(250,204,21,0.1); padding: 20px; border-radius: 15px; border: 2px solid #facc15; margin: 20px 0;">
+    <button id="toggle-colacion" class="btn" style="background: #facc15; color: #111827; width: 100%; font-size: 1.1rem;">
+        📋 Colación del Día - $6.000 (Plato + 2 agregados + ensalada)
+    </button>
+    
+    <div id="colacion-config" style="display: none; margin-top: 15px;">
+        <strong style="color: #facc15;">1. PLATO PRINCIPAL:</strong>
+        <select id="colacion-plato" style="width: 100%; margin: 10px 0;">
+            <option value="">Elige tu plato</option>
+            <option value="lomo-saltado">Lomo saltado</option>
+            <option value="chuleta">Chuleta</option>
+            <option value="carne-mechada">Carne mechada</option>
+            <option value="pechuga-plancha">Pechuga a la plancha</option>
+            <option value="costillar">Costillar</option>
+            <option value="pollo-mongoliano">Pollo mongoliano</option>
+            <option value="carne-mongoliana">Carne mongoliana</option>
+        </select>
+        
+        <strong style="color: #facc15;">2. ELIGE 2 AGREGADOS:</strong>
+        <div style="margin: 10px 0;">
+            <label><input type="checkbox" name="colacion-agregado" value="arroz"> Arroz</label><br>
+            <label><input type="checkbox" name="colacion-agregado" value="a-lo-pobre"> A lo pobre</label><br>
+            <label><input type="checkbox" name="colacion-agregado" value="papas-mayo"> Papas mayo</label><br>
+            <label><input type="checkbox" name="colacion-agregado" value="papas-fritas"> Papas fritas</label>
+        </div>
+        
+        <!-- DESPUÉS de los checkboxes de agregados -->
+<div style="margin: 10px 0; padding: 8px; background: rgba(15,23,42,0.8); border-radius: 8px;">
+    <span id="contador-agregados" style="color: #facc15;">Agregados: 0/2</span>
+</div>
+
+        <strong style="color: #facc15;">3. ENSALADA FRESCA (elige todas las que quieras):</strong>
+<div style="margin: 10px 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 8px;">
+    <label style="display: flex; align-items: center; gap: 8px; padding: 12px; background: rgba(15,23,42,0.8); border-radius: 12px; cursor: pointer; border: 2px solid transparent; transition: all 0.2s; font-size: 0.95rem;">
+        <input type="checkbox" name="colacion-ensalada" value="lechuga" style="width: 22px; height: 22px; accent-color: #facc15;">
+        Lechuga
+    </label>
+    
+    <label style="display: flex; align-items: center; gap: 8px; padding: 12px; background: rgba(15,23,42,0.8); border-radius: 12px; cursor: pointer; border: 2px solid transparent; transition: all 0.2s; font-size: 0.95rem;">
+        <input type="checkbox" name="colacion-ensalada" value="repollo" style="width: 22px; height: 22px; accent-color: #facc15;">
+        Repollo
+    </label>
+    
+    <label style="display: flex; align-items: center; gap: 8px; padding: 12px; background: rgba(15,23,42,0.8); border-radius: 12px; cursor: pointer; border: 2px solid transparent; transition: all 0.2s; font-size: 0.95rem;">
+        <input type="checkbox" name="colacion-ensalada" value="choclo" style="width: 22px; height: 22px; accent-color: #facc15;">
+        Choclo
+    </label>
+    
+    <label style="display: flex; align-items: center; gap: 8px; padding: 12px; background: rgba(15,23,42,0.8); border-radius: 12px; cursor: pointer; border: 2px solid transparent; transition: all 0.2s; font-size: 0.95rem;">
+        <input type="checkbox" name="colacion-ensalada" value="tomate" style="width: 22px; height: 22px; accent-color: #facc15;">
+        Tomate
+    </label>
+    
+    <label style="display: flex; align-items: center; gap: 8px; padding: 12px; background: rgba(15,23,42,0.8); border-radius: 12px; cursor: pointer; border: 2px solid transparent; transition: all 0.2s; font-size: 0.95rem;">
+        <input type="checkbox" name="colacion-ensalada" value="pepino" style="width: 22px; height: 22px; accent-color: #facc15;">
+        Pepino
+    </label>
+</div>
+
+<button id="btn-agregar-colacion" class="btn btn-secondary" style="width: 100%; margin-top: 15px;">
+    ➕ Agregar Colación al Pedido ($6.000)
+</button>
+
+
+
+
+            <!-- Detalle colaciones -->
+            <div class="form-group" style="margin-top:15px;">
+              <label for="detalle-colacion">
+                Detalle de colaciones del día (plato, agregados y ensalada)
+              </label>
+              <textarea id="detalle-colacion" rows="3"
+                placeholder="Ej: 1 lomo saltado con arroz y papas fritas + ensalada lechuga/tomate; 1 pollo mongoliano con arroz y ensalada choclo/pepino."></textarea>
+            </div>
+                      </div> <!-- cierra container -->
+        </section> <!-- ✅ CIERRA DELIVERY -->
+
+            <!-- Eventos -->
+        <section id="eventos" class="section">
+  <div class="container">
+    <h2>Carrito de eventos Sabores del Raco XL</h2>
+
+    <div class="eventos-layout">
+      <!-- SLIDER -->
+      <div class="eventos-slider">
+        <div class="eventos-slide active">
+          <img src="img/Carrito 1.jpg" alt="Carrito Sabores del Raco en evento de día" class="eventos-img">
+        </div>
+        <div class="eventos-slide">
+          <img src="img/carrito 2.jpg" alt="Carrito Sabores del Raco iluminado de noche" class="eventos-img">
+        </div>
+        <div class="eventos-slide">
+          <img src="img/carrito 3.jpg" alt="Carrito Sabores del Raco decorado con banderines" class="eventos-img">
+        </div>
+        <div class="eventos-slide">
+          <img src="img/carrito 4.jpg" alt="Carrito Sabores del Raco con equipo atendiendo" class="eventos-img">
+        </div>
+        <div class="eventos-slide">
+          <img src="img/carrito 5.jpg" alt="Carrito Sabores del Raco en cumpleaños" class="eventos-img">
+        </div>
+      </div>
+
+      <!-- INFO + FLYER -->
+      <div class="eventos-info">
+        <p class="eventos-intro">
+          Llegamos a tus celebraciones con el carrito <strong>Sabores del Raco XL</strong>:
+          cumpleaños, baby shower, matrimonios, empresas y más. Armamos el menú a tu medida.
+        </p>
+
+        <h3>Lo que incluye el servicio</h3>
+        <ul class="eventos-lista">
+          <li>Mayonesa casera, ketchup, mostaza, ají crema y salsas.</li>
+          <li>Servilletas, envases y manipulador de alimentos.</li>
+          <li>Atención en el carrito durante aprox. 3 horas.</li>
+        </ul>
+
+        <h3>Condiciones principales</h3>
+        <ul class="eventos-lista">
+          <li>Eventos desde 50 unidades. Todas las promos se pueden mezclar.</li>
+          <li>Reserva con 30% y saldo al terminar el evento.</li>
+          <li>Cargo por traslado según dirección dentro o fuera de Santiago.</li>
+        </ul>
+
+        <h3>Productos para tu evento</h3>
+        <ul class="eventos-lista">
+          <li>Churrascos, completos, italianos y dinámicos.</li>
+          <li>Hamburguesas artesanales, fajitas XL.</li>
+          <li>Papas fritas, nuggets, aros de cebolla, waffles y helados tailandeses.</li>
+        </ul>
+
+        <div class="eventos-flyer">
+          <img src="img/condiciones.jpg" alt="Condiciones del servicio carrito Sabores del Raco" class="eventos-img">
+        </div>
+
+        <p class="eventos-contacto">
+          Sabores del Raco llega a tus celebraciones con comida rápida fresca y con mucho sabor.
+          Cotiza tu evento al WhatsApp <strong>+56 9 7985 4775</strong>.
+        </p>
+        <div style="text-align: center; margin-top: 18px;">
+  <a href="https://wa.me/56979854775?text=Hola!%20Quiero%20cotizar%20un%20evento%20con%20el%20carrito%20Sabores%20del%20Raco%20XL"
+     target="_blank"
+     class="btn btn-secondary"
+     style="font-size: 1.1rem; padding: 14px 26px;">
+    📲 Cotizar evento
+  </a>
+</div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+        <!-- CONTACTO -->
+        <section id="contacto" class="section">
+            <div class="container">
+                <h2>Contacto</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 2rem;">
+                    <div>
+                        <h3>📍 Ubicación</h3>
+                        <p><strong>27 de Septiembre 04390</strong><br>Puente Alto, Santiago</p>
+                        <p><strong>🕐 Horarios:</strong><br>Lun-Dom 12:00 pm - 01:00 am</p>
+                    </div>
+                    <div>
+                        <h3>📱 WhatsApp</h3>
+                        <p><strong>+56 9 7487 6990</strong><br>Delivery y reservas</p>
+                        <p style="margin-top: 1rem;">
+                            <a href="https://wa.me/56974876990" target="_blank" class="btn btn-secondary" style="width: 100%; text-align: center;">Escribir por WhatsApp</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Sabores del Raco XL - Puente Alto</p>
+        </div>
+    </footer>
+</body>
+</html>
