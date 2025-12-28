@@ -720,3 +720,44 @@ textarea {
   }
 }
 
+/* --------- PRELOADER --------- */
+#preloader {
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at top, #111827 0, #020617 40%, #000 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.preloader-inner {
+  text-align: center;
+  color: #facc15;
+  animation: preloader-pop 0.8s ease-out;
+}
+
+.preloader-logo {
+  width: 180px;
+  max-width: 70vw;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(250, 204, 21, 0.7);
+  margin-bottom: 16px;
+}
+
+#preloader p {
+  font-size: 1rem;
+  color: #e5e7eb;
+}
+
+@keyframes preloader-pop {
+  from { transform: scale(0.9); opacity: 0; }
+  to   { transform: scale(1); opacity: 1; }
+}
+
+/* oculto cuando se agrega la clase */
+body.loaded #preloader {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.6s ease;
+}
