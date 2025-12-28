@@ -4,14 +4,24 @@ const sections = document.querySelectorAll('.section');
 const heroButtons = document.querySelectorAll('[data-go]');
 
 function mostrarSeccion(id) {
-    sections.forEach(sec => {
-        sec.classList.toggle('active', sec.id === id);
-    });
-    navLinks.forEach(link => {
-        link.classList.toggle('active', link.dataset.section === id);
-    });
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+  sections.forEach(sec => {
+    sec.classList.toggle('active', sec.id === id);
+  });
+
+  navLinks.forEach(link => {
+    link.classList.toggle('active', link.dataset.section === id);
+  });
+
+  // 🔹 Actualizar hash en la URL (para que se vea /#menu, /#delivery, etc.)
+  if (history.pushState) {
+    history.pushState(null, '', `#${id}`);
+  } else {
+    window.location.hash = `#${id}`;
+  }
+
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 }
+
 
 // Links del navbar
 navLinks.forEach(link => {
@@ -229,8 +239,22 @@ if (btnWhatsapp) {
 
 // ---------- INICIALIZACIÓN COMPLETA ----------
 document.addEventListener('DOMContentLoaded', () => {
-    // Dejar "inicio" activo por defecto
-    mostrarSeccion('inicio');
+  // Ocultar preloader cuando todo esté listo
+  setTimeout(() => {
+    document.body.classList.add('loaded');
+  }, 800); // ajusta el tiempo si quieres más o menos
+
+  // 🔹 lógica de secciones
+  const hash = window.location.hash.replace('#', '');
+  const inicial = hash || 'inicio';
+  mostrarSeccion(inicial);
+
+  
+});
+
+
+
+
 
     // ========== CONFIGURADOR COLACIONES ==========
     const btnToggleColacion = document.getElementById('toggle-colacion');
@@ -328,4 +352,3 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
-});
